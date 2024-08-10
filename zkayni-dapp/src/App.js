@@ -2,7 +2,9 @@
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers';
-//import Look from "./artifacts/contracts/Lock.sol/Lock.json";
+import Look from "./artifacts/contracts/Lock.sol/Lock.json";
+
+const lookAddress= "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 function App() {
   return (

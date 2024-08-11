@@ -2,31 +2,39 @@
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers';
-//import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
 import Look from "./artifacts/contracts/Lock.sol/Lock.json";
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
+import Inicio from './components/Inicio';
+import User from './components/User';
+import About from './components/About';
 
 const lookAddress= "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 function App() {
   return (
-   
-    <div className="App">
+   <div className="App">
       <div className="App-Header"> 
         <div className='description'>
           <h1>ZKAyni MVP</h1>
-          <h3>Full stack Dapp for PSE Core Program Hackathon</h3>
-          
+          <h3>Full stack Dapp for PSE Core Program Hackathon</h3>          
         </div>
         <div>
+          <BrowserRouter>
             <Navbar/>
-            <ItemListContainer/>
-          </div>
+            <Routes>
+              <Route path='/' element={<Inicio/>}/>
+              <Route path='/airdrop' element={<ItemListContainer/>}/>
+              <Route path='/beneficiary' element={<User/>}/>
+              <Route path='/about' element={<About/>}/>
+            </Routes>  
+          </BrowserRouter>
+        </div>
         
        </div>
-      </div>     
-    
+   </div>     
+       
   );
 }
 

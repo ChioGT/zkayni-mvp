@@ -51,6 +51,24 @@ input{
   color: #61dafb;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --clr-main: lightgray;
+  --clr-main-light: #efdaf9;
+}
+
+.container {
+  max-width: 1140px;
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}
+
 .navbar {
   padding: 2rem;
   display: flex;
@@ -80,6 +98,38 @@ input{
 
 .menu-link:hover {
   text-decoration: underline;
+}
+
+.beneficiaries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.beneficiary {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.beneficiary > div {
+  padding: 1rem;
+  background-color: #61dafb;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.container {
+  max-width: 1140px;
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin-top: 2rem;
 }
 
 @keyframes App-logo-spin {

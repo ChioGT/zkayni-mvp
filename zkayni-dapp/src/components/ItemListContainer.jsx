@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { GetData } from "../helpers/GetData";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
 
-    const [Beneficiaries, setBeneficiaries] = useState([]);
+    const [beneficiaries, setBeneficiaries] = useState([]);
  
     useEffect(() => {
       GetData()
@@ -13,7 +14,9 @@ const ItemListContainer = () => {
     }, [])
     
   return (
-    <div>ItemListContainer</div>
+    <div>
+        <ItemList beneficiaries={beneficiaries}/>
+    </div>
   )
 }
 

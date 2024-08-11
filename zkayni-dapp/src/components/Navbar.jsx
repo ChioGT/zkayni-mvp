@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
-        <a href='/' className='logo'><h1></h1></a>
+        <Link to='/' className='logo'><h1></h1></Link>
         <wl className='menu'>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/airdrop'>Airdrop Manager</a></li>
-            <li><a href='/beneficiary'>Beneficiaries</a></li>
-            <li><a href='/about'>About Project</a></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/airdrop'>Airdrop Manager</Link></li>
+            <li><Link to='/beneficiary'>Beneficiaries</Link></li>
+            <li><Link to='/about'>About Project</Link></li>
         </wl>
     </nav>
   )

@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "wallet_address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+      "balance": 10.50,
+      "currency": "ETH",
+      "transactions": [
+        {
+          "id": 1,
+          "date": "2022-01-01T12:00:00.000Z",
+          "amount": 2.50,
+          "type": "deposit"
+        },
+        {
+          "id": 2,
+          "date": "2022-01-05T14:00:00.000Z",
+          "amount": 1.00,
+          "type": "withdrawal"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "wallet_address": "0x053a9468851C6140236464c59701f016ee34542e",
+      "balance": 50.00,
+      "currency": "BTC",
+      "transactions": [
+        {
+          "id": 3,
+          "date": "2022-01-10T10:00:00.000Z",
+          "amount": 20.00,
+          "type": "deposit"
+        },
+        {
+          "id": 4,
+          "date": "2022-01-15T12:00:00.000Z",
+          "amount": 10.00,
+          "type": "withdrawal"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "wallet_address": "0x42143389d54fb71043905736c66968934343434",
+      "balance": 200.00,
+      "currency": "LTC",
+      "transactions": [
+        {
+          "id": 5,
+          "date": "2022-01-20T14:00:00.000Z",
+          "amount": 50.00,
+          "type": "deposit"
+        },
+        {
+          "id": 6,
+          "date": "2022-01-25T16:00:00.000Z",
+          "amount": 20.00,
+          "type": "withdrawal"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "wallet_address": "0x9876543210987654321098765432109876",
+      "balance": 30.00,
+      "currency": "ETH",
+      "transactions": [
+        {
+          "id": 7,
+          "date": "2022-02-01T10:00:00.000Z",
+          "amount": 10.00,
+          "type": "deposit"
+        },
+        {
+          "id": 8,
+          "date": "2022-02-05T12:00:00.000Z",
+          "amount": 5.00,
+          "type": "withdrawal"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "wallet_address": "0x1234567890123456789012345678901234",
+      "balance": 100.00,
+      "currency": "BTC",
+      "transactions": [
+        {
+          "id": 9,
+          "date": "2022-02-10T14:00:00.000Z",
+          "amount": 30.00,
+          "type": "deposit"
+        },
+        {
+          "id": 10,
+          "date": "2022-02-15T16:00:00.000Z",
+          "amount": 20.00,
+          "type": "withdrawal"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "wallet_address": "0x5555555555555555555555555555555555",
+      "balance": 50.00,
+      "currency": "LTC",
+      "transactions": [
+        {
+          "id": 11,
+          "date": "2022-02-20T10:00:00.000Z",
+          "amount": 20.00,
+          "type": "deposit"
+        },
+        {
+          "id": 12,
+          "date": "2022-02-25T12:00:00.000Z",
+          "amount": 10.00,
+          "type": "withdrawal"
+        }
+      ]
+    }
+]
+    

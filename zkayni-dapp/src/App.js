@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { ethers } from 'ethers';
 //import {BrowserRouter, Route, Link} from 'react-router-dom';
 import Look from "./artifacts/contracts/Lock.sol/Lock.json";
+import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
 const lookAddress= "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
@@ -15,16 +17,15 @@ function App() {
         <div className='description'>
           <h1>ZKAyni MVP</h1>
           <h3>Full stack Dapp for PSE Core Program Hackathon</h3>
+          
         </div>
-        <div className="custom-buttons">
-          <p>
-            <button style={{backgroudColor: "green"}}>Airdrop Manager</button>
-            <button style={{backgroudColor: "red"}}>Beneficiary</button> 
-          </p>
+        <div>
+            <Navbar/>
+            <ItemListContainer/>
+          </div>
+        
        </div>
-      </div>    
-    </div>
-  
+      </div>     
     
   );
 }

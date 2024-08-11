@@ -2,14 +2,14 @@
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+//import {BrowserRouter, Route, Link} from 'react-router-dom';
 import Look from "./artifacts/contracts/Lock.sol/Lock.json";
 
 const lookAddress= "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 function App() {
   return (
-    <BrowserRouter>
+   
     <div className="App">
       <div className="App-Header"> 
         <div className='description'>
@@ -18,15 +18,13 @@ function App() {
         </div>
         <div className="custom-buttons">
           <p>
-            <button style={{backgroudColor: "green"}}><Link to="/airdrop-manager">Airdrop Manager</Link></button>
-            <button style={{backgroudColor: "red"}}><Link to="/beneficiaries">Beneficiary</Link></button> 
+            <button style={{backgroudColor: "green"}}>Airdrop Manager</button>
+            <button style={{backgroudColor: "red"}}>Beneficiary</button> 
           </p>
-          <Route path='/airdrop-manager' />
-          <Route path='/beneficiaries' />
-        </div>
+       </div>
       </div>    
     </div>
-    </BrowserRouter>
+  
     
   );
 }

@@ -1,0 +1,17 @@
+[
+   {
+        "id": 1,
+        "wallet_address": "0x053a9468851C6140236464c59701f016ee34542e",
+        "date": "2024-08-01T12:00:00.000Z",
+        "amount": 15.50,
+        "type": "withdrawal"
+    },
+    {
+        "id": 2,
+        "wallet_address": "0x42143389d54fb71043905736c66968934343434",
+        "date": "2024-08-05T14:00:00.000Z",
+        "amount": 5.00,
+        "type": "withdrawal"
+    }
+   
+]

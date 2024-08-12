@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {useState} from "react";
 import { useQuery, useQueryClient } from "react-query";
 import { GetSemaphoreId } from "../helpers/GetSemaphoreId";
+import EmitVocher from "../components/EmitVoucher";
 
 const baseURL = "http://localhost:3001/beneficiarios";
 
@@ -58,8 +59,12 @@ const User = ({beneficiaries}) => {
         </div>
         <div>
         <br/><br/>
-          <input type="text" value={inputValue} onChange={(e)=> setInputValue(e.target.value)} placeholder="Enter your secret"/> <br/><br/>
+          <input type="text" value={inputValue} onChange={(e)=> setInputValue(e.target.value)} placeholder="Enter your code"/> <br/><br/>
           <button >Create semaphore Identity</button>
+          <br/><br/><br/>
+          <h1>Vouchers</h1>
+          <br/>
+          <EmitVocher/>
 
         </div>  
       </div>

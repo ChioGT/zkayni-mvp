@@ -1,6 +1,7 @@
 import axios from "axios";
-import React from "react";
+import React, {useState} from "react";
 import { useQuery, useQueryClient } from "react-query";
+import { GetSemaphoreId } from "../helpers/GetSemaphoreId";
 
 const baseURL = "http://localhost:3001/beneficiarios";
 
@@ -44,10 +45,23 @@ const User = ({beneficiaries}) => {
 
     if (!post) return null;
 */
+
+    const [inputValue, setInputValue] = useState('');
+    const [data, setData] = useState(null);
+
+    const [semaphoreId, setSemaphoreId] = useState([]);
+ 
     return (
       <div className="container"> 
+        <div>
           <h2 className="main-title">Beneficiario</h2>
-         
+        </div>
+        <div>
+        <br/><br/>
+          <input type="text" value={inputValue} onChange={(e)=> setInputValue(e.target.value)} placeholder="Enter your secret"/> <br/><br/>
+          <button >Create semaphore Identity</button>
+
+        </div>  
       </div>
     )
   }
